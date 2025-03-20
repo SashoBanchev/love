@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monika</title>
+    <link rel="icon" href="heart-removebg-preview.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+            <div>
+                <h1 class="header_text"> iskash li da izlezem w nedelq? </h1> 
+            </div>
+            <div class="gif container">
+                <img src="Couple Love Sticker by ACHTUNG for iOS & Android GIPHY.gif" alt="cc">
+            </div>
+    <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">da</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()">ne</button>
+        <script>
+            function nextPage() {
+                window.location.href = "yes.html"
+            }
+
+            function moveButton() {
+                var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                document.getElementById('noButton').style.left = `${x}px`;
+                document.getElementById('noButton').style.top = `${y}px`;
+                    }
+        </script>
+    </div>
+    </div>
+    
+</body>
+</html>
